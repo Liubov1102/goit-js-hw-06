@@ -21,4 +21,4 @@ return ingredientsEl;
 const elements = makeIngredients(ingredients);
 
 ingredientsCont.append(...elements);
-console.log(ingredientsCont);
+

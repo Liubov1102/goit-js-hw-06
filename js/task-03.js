@@ -13,20 +13,9 @@ const images = [
   },
 ];
 const imagesCont = document.querySelector('ul');
-console.log(imagesCont);
-const makeImages = option => {
-  //console.log(option);
-const { url, alt } = option;
 
-  return `
-  <li class='item-gall'>
-    <img src='${url}' alt='${alt}' width='320'/>  
-  </li>`;
-};
-//console.log(images);
-const makeImagesGall = images.map(makeImages).join();
+const makeImagesGall = images.map(image => {
+  return `<li class='item-gall'><img src="${image.url}" alt="${image.alt}" width='320'/></li>`}).join();
 imagesCont.insertAdjacentHTML('afterbegin', makeImagesGall);
-//console.log(makeImagesGall);
 
 
- 

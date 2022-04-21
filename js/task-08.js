@@ -12,13 +12,8 @@ function onFormSubmit(event){
         return alert("Please fill in all the fields!");
       };
 
-      const formData = new FormData(event.currentTarget);
-      console.log(formData);
-
-    formData.forEach((value, name) => {
-       console.log(name);
-       console.log(value);
-    });
+    console.log(`Email: ${email.value}
+    Password: ${password.value}`);
 
     event.currentTarget.reset();
 }

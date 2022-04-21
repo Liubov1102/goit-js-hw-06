@@ -6,3 +6,5 @@ const handleInput = () => {
 };
 
 inputRange.addEventListener("input", handleInput);
+
+inputText.style.fontSize = `${inputRange.value}px`;

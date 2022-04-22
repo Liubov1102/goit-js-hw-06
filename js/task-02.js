@@ -8,8 +8,8 @@ const ingredients = [
 ];
 const ingredientsCont = document.querySelector('ul#ingredients');
 
-const makeIngredients = options => {
- return options.map(option => {
+const makeIngredients = options => 
+  options.map(option => {
 
 const ingredientsEl = document.createElement('li');
 ingredientsEl.classList.add('item');
@@ -17,8 +17,6 @@ ingredientsEl.textContent = option;
 
 return ingredientsEl;
 });
-}
-const elements = makeIngredients(ingredients);
 
-ingredientsCont.append(...elements);
+ingredientsCont.append(...makeIngredients(ingredients));
 

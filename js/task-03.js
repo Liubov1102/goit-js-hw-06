@@ -14,8 +14,9 @@ const images = [
 ];
 const imagesCont = document.querySelector('ul');
 
-const makeImagesGall = images.map(image => {
-  return `<li class='item-gall'><img src="${image.url}" alt="${image.alt}" width='320'/></li>`}).join();
+const makeImagesGall = images.map(image => 
+  `<li class='item-gall'><img src="${image.url}" alt="${image.alt}" width='320'/></li>`).join();
+  
 imagesCont.insertAdjacentHTML('afterbegin', makeImagesGall);
 
 
